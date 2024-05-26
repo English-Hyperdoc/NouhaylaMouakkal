@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import CoverLetter from "./components/Cover Letter/CoverLetterOracle";
+import Geiw from "./components/Geiw/MyExperience";
 import {
   BrowserRouter as Router,
   Route,
@@ -41,6 +42,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/coverletter" element={<CoverLetter />} />
+          <Route path="/geiw" element={<Geiw />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

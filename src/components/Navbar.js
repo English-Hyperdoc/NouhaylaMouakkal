@@ -15,7 +15,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import { MdEmojiEvents } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -101,6 +101,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <SlEnvolopeLetter style={{ marginBottom: "2px" }} /> Cover Letter
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/geiw"
+                onClick={() => updateExpanded(false)}
+              >
+                <MdEmojiEvents style={{ marginBottom: "2px" }} /> GEIW
               </Nav.Link>
             </Nav.Item>
 
